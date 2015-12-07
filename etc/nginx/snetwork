@@ -7,6 +7,6 @@ server {
     location / { try_files $uri @yourapplication; }
     location @snetwork {
         include uwsgi_params;
-        uwsgi_pass unix:/home/cristian/snetwork/etc/uwsgi/snetwork.sock;
+        uwsgi_pass unix:/home/cristian/social-network/etc/uwsgi/snetwork.sock;
     }
 }
