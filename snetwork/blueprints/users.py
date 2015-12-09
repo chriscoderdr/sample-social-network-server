@@ -14,5 +14,5 @@ def login():
         return jsonify({'status': 'error', 'data': None,
                         'message': 'Error trying to log in'})
     login_user(user)
-    return jsonify({'status': 'sucesss', 'data': None,
+    return jsonify({'status': 'success', 'data': None,
                     'message': 'User has been logged in'})
